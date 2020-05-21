@@ -1,0 +1,16 @@
+{
+
+"firstName": "Mr Remigiusz",
+"lastName": "Kowalski",
+"phone": "333222111",
+"email": "remik@gimajl.com", 
+"address": "Ulica ulubiencow BMW", 
+"city": "Stolica FKR", 
+"stateProvince": "Lubuskie",
+"postalCode":"666-666",
+"country":"POLAND",
+"userName":"remigiuszek",
+"password":"haselko123",
+"confirmPassword":"haselko123"
+
+}
