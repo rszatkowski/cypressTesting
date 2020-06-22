@@ -1,7 +1,7 @@
 {
 
 "firstName": "Mr Remigiusz",
-"lastName": "Kowalski",
+"lastName": "Karolowski",
 "phone": "333222111",
 "email": "remik@gimajl.com", 
 "address": "Ulica ulubiencow BMW", 
@@ -9,7 +9,7 @@
 "stateProvince": "Lubuskie",
 "postalCode":"666-666",
 "country":"POLAND",
-"userName":"remigiuszek",
+"userName":"jakiesimie",
 "password":"haselko123",
 "confirmPassword":"haselko123"
 

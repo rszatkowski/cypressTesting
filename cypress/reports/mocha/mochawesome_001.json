@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2020-06-05T13:45:06.967Z",
+    "end": "2020-06-05T13:45:35.413Z",
+    "duration": 28446,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "8a24b568-7383-428d-8acc-6e72fb594a08",
+      "title": "",
+      "fullFile": "cypress/integration/tests/testCase2.js",
+      "file": "cypress/integration/tests/testCase2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "809cd0d1-4d0a-4c8a-9e8c-ff68541791f1",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Step 1: Go to the site",
+              "fullTitle": "My First Test Step 1: Go to the site",
+              "timedOut": null,
+              "duration": 1422,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _frontPage.navigateToSite)();",
+              "err": {},
+              "uuid": "10a65bd4-25e8-4227-a538-a4b9d5d23feb",
+              "parentUUID": "809cd0d1-4d0a-4c8a-9e8c-ff68541791f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step 2: Go to register tab",
+              "fullTitle": "My First Test Step 2: Go to register tab",
+              "timedOut": null,
+              "duration": 744,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _frontPage.goToRegisterTab)();",
+              "err": {},
+              "uuid": "fcd89b29-b558-401d-89a8-7cc57420f584",
+              "parentUUID": "809cd0d1-4d0a-4c8a-9e8c-ff68541791f1",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step 3: Createn new account",
+              "fullTitle": "My First Test Step 3: Createn new account",
+              "timedOut": null,
+              "duration": 24522,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _registerPage.registerAccount)();",
+              "err": {},
+              "uuid": "88059512-fe2d-472a-b25f-d667a9ad9b30",
+              "parentUUID": "809cd0d1-4d0a-4c8a-9e8c-ff68541791f1",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "10a65bd4-25e8-4227-a538-a4b9d5d23feb",
+            "fcd89b29-b558-401d-89a8-7cc57420f584",
+            "88059512-fe2d-472a-b25f-d667a9ad9b30"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 26688,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

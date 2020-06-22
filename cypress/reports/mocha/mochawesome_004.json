@@ -1,0 +1,154 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 1,
+    "pending": 0,
+    "failures": 2,
+    "start": "2020-06-05T13:57:43.658Z",
+    "end": "2020-06-05T13:57:51.595Z",
+    "duration": 7937,
+    "testsRegistered": 3,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0d64cfd7-680b-4a89-9514-5639e843b3a3",
+      "title": "",
+      "fullFile": "cypress/integration/tests/testCase2.js",
+      "file": "cypress/integration/tests/testCase2.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f3eef268-0fed-4609-a8aa-4e4fa6d38143",
+          "title": "My First Test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Step 1: Go to the site",
+              "fullTitle": "My First Test Step 1: Go to the site",
+              "timedOut": null,
+              "duration": 1421,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "(0, _frontPage.navigateToSite)();",
+              "err": {},
+              "uuid": "081420f7-c417-4585-8b73-614229ad3423",
+              "parentUUID": "f3eef268-0fed-4609-a8aa-4e4fa6d38143",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step 2: Go to register tab",
+              "fullTitle": "My First Test Step 2: Go to register tab",
+              "timedOut": null,
+              "duration": 141,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _frontPage.goToRegisterTab)();",
+              "err": {
+                "message": "TypeError: Cannot read property 'isAttached' of undefined",
+                "estack": "TypeError: Cannot read property 'isAttached' of undefined\n    at /home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/lib/browsers/firefox-util.js:117:20\n    at tryCatcher (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/util.js:16:23)\n    at /home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/method.js:15:34\n    at /home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/lib/browsers/firefox-util.js:235:40\n    at tryCatcher (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/util.js:16:23)\n    at Promise._settlePromiseFromHandler (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:547:31)\n    at Promise._settlePromise (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:604:18)\n    at Promise._settlePromise0 (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:649:10)\n    at Promise._settlePromises (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/promise.js:729:18)\n    at _drainQueueStep (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/async.js:93:12)\n    at _drainQueue (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/async.js:86:9)\n    at Async._drainQueues (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/async.js:102:5)\n    at Immediate.Async.drainQueues [as _onImmediate] (/home/demeroth/.cache/Cypress/4.6.0/Cypress/resources/app/packages/server/node_modules/bluebird/js/release/async.js:15:14)\n    at processImmediate (internal/timers.js:439:21)\n",
+                "diff": null
+              },
+              "uuid": "7a39cd7b-3d80-45c3-a4fd-cede4f4ef8ce",
+              "parentUUID": "f3eef268-0fed-4609-a8aa-4e4fa6d38143",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Step 3: Createn new account",
+              "fullTitle": "My First Test Step 3: Createn new account",
+              "timedOut": null,
+              "duration": 4152,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "(0, _registerPage.registerAccount)();",
+              "err": {
+                "message": "AssertionError: Timed out retrying: Expected to find element: `[name=\"firstName\"]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying: Expected to find element: `[name=\"firstName\"]`, but never found it.\n    writeDown@http://newtours.demoaut.com/__cypress/tests?p=cypress/integration/tests/testCase2.js:90:13\n    registerAccount/<@http://newtours.demoaut.com/__cypress/tests?p=cypress/integration/tests/testCase2.js:69:14\n    getRet@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:142776:20\n    tryCatcher@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:10384:23\n    ../../node_modules/bluebird/js/release/method.js/module.exports/Promise.try@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:7658:29\n    thenFn@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:142794:20\n    then@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:143233:21\n    wrapByType/<@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:156245:21\n    runCommand/<@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:155689:15\n    tryCatcher@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:10384:23\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseFromHandler@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:8319:31\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromise@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:8376:18\n    ../../node_modules/bluebird/js/release/promise.js/</module.exports/Promise.prototype._settlePromiseCtx@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:8413:10\n    _drainQueueStep@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:5095:12\n    _drainQueue@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:5084:24\n    ../../node_modules/bluebird/js/release/async.js/</Async.prototype._drainQueues@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:5100:16\n    Async/this.drainQueues@http://newtours.demoaut.com/__cypress/runner/cypress_runner.js:4970:14\n",
+                "diff": null
+              },
+              "uuid": "e9642100-19a9-4ce2-a378-1e5932ab4068",
+              "parentUUID": "f3eef268-0fed-4609-a8aa-4e4fa6d38143",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "081420f7-c417-4585-8b73-614229ad3423"
+          ],
+          "failures": [
+            "7a39cd7b-3d80-45c3-a4fd-cede4f4ef8ce",
+            "e9642100-19a9-4ce2-a378-1e5932ab4068"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 5714,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.1.1"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.1.0"
+    }
+  }
+}

@@ -21,7 +21,6 @@ const submitButton = '[name="register"]'
 
 export function registerAccount(){
 
-  
     cy.fixture('account').then((account)  => {
         
         writeDown(firstName, account.firstName)
