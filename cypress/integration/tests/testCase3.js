@@ -1,44 +1,31 @@
 /// <reference types = "cypress"/>
 
-describe('Test dedicated to fail', () => {
+import {openApp, goToAccountSettings, createAccount, loginToSystem} from "../../pages/dmmMockSettingsPage"
 
-  it('Step 1: Go to the site', () => {
-    cy.visit('www.google.com')
-  })
+describe('DMM first Test', () => {
 
-
-  it('Step 2: Go to register tab', () => {
-    
-    //::::::Standard Assertion
-    cy.get('.gb_oe').contains('Zaloguj')
-    
-    //::::::Extended Assertion
-    
-    //Should --waits for elements - better to use 
-    cy.get('.gb_oe').should((elements) => {
-        expect(elements).to.contains.text('Zaloguj')
-    })
-
-    //Then --is not waiting 
-    cy.get('.gb_oe').then((elements) => {
-      expect(elements).to.contains.text('Zaloguj')
-  })
-
+  it('Step 1: Go to the app', () => {
+    openApp()
 })
 
-//Using different data for DEV or PROD
-it('Step 3: Input data', () => {
-  cy.fixture(`googleSearch-${Cypress.env("ENV")}`).then(data=>{
-    cy.get('[name="q"]').type(data.search)
-  })
+  it('Step 2: Go to the settings tab', () => {
+  goToAccountSettings()
+})
 
-  
+  it('Step 3: Create an account', () => {
+  createAccount()
+})
+
+  it('Step 4: Login to the system', () => {
+  loginToSystem()
+})
+
 })
 
 
 
 
-  })
+
 
 
 

@@ -1,23 +1,42 @@
 /// <reference types = "cypress"/>
 
-import {navigateToSite, goToRegisterTab} from "../../pages/frontPage"
-import {registerAccount, verifyAccount} from "../../pages/registerPage"
-  
-
-
-describe('My First Test', () => {
+describe('Test dedicated to fail', () => {
 
   it('Step 1: Go to the site', () => {
-    navigateToSite()
+    cy.visit('www.google.com')
   })
+
 
   it('Step 2: Go to register tab', () => {
-    goToRegisterTab()
+    
+    //::::::Standard Assertion
+    cy.get('.gb_oe').contains('Zaloguj')
+    
+    //::::::Extended Assertion
+    
+    //Should --waits for elements - better to use 
+    cy.get('.gb_oe').should((elements) => {
+        expect(elements).to.contains.text('Zaloguj')
+    })
+
+    //Then --is not waiting 
+    cy.get('.gb_oe').then((elements) => {
+      expect(elements).to.contains.text('Zaloguj')
   })
 
-  it('Step 3: Createn new account', () => {
-    registerAccount()
+})
+
+//Using different data for DEV or PROD
+it('Step 3: Input data', () => {
+  cy.fixture(`googleSearch-${Cypress.env("ENV")}`).then(data=>{
+    cy.get('[name="q"]').type(data.search)
   })
+
+  
+})
+
+
+
 
   })
 

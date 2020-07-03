@@ -2,7 +2,6 @@
 
 
 const URL_dev = "https://admin-tool-mock-frontend-dev.okd.conti-tts.synapse.com/login"
-const URL_stg = "https://www.at.my-fis.com/dmm50/login/login"
 const URL_activation_tool = "https://working-archive-storage-service-dev.okd.conti-tts.synapse.com/management/transition/"
 
 let credentials = makeId(6)
