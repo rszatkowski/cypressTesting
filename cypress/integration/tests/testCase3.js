@@ -16,6 +16,9 @@ describe('DMM first Test', () => {
   createAccount()
 })
 
+
+//tutaj metoda 
+
   it('Step 4: Login to the system', () => {
   loginToSystem()
 })

@@ -1,16 +1,16 @@
 {
 
-"firstName": "Mr Remigiusz",
+"firstName": "Jan",
 "lastName": "Karolowski",
 "phone": "333222111",
-"email": "remik@gimajl.com", 
+"email": "rasd@imajl.com", 
 "address": "Jakas Ulica", 
-"city": "Stolica FKR", 
+"city": "Warszawa", 
 "stateProvince": "Lubuskie",
-"postalCode":"666-666",
+"postalCode":"123-123",
 "country":"POLAND",
-"userName":"jakiesimie",
-"password":"haselko123",
-"confirmPassword":"haselko123"
+"userName":"user",
+"password":"asdasds",
+"confirmPassword":"asdasds"
 
 }
